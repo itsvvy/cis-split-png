@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cis-split-png"
+version = "0.1.0"
+description = "Split side-by-side CIS video into left and right PNG directories"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cis_split_png = "cis_split_png.cli:main_entry"
+
+[tool.setuptools.packages.find]
+where = ["src"]
